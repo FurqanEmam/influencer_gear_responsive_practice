@@ -1,0 +1,145 @@
+/* fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* common styles  */
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+}
+.container{
+    background: #ffffff;
+    width: 870px;
+    padding: 30px;
+    margin-top: 36px;
+    border-radius: 8px;
+}
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* navbar styles */
+header{
+    background-color: #562eff;
+}
+.nav-header{
+    display: flex;
+    justify-content: center;
+}
+nav img{
+    width: 56px;
+    height: 56px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 870px;
+    padding: 10px 5px;
+}
+.container-left{
+    display: flex;
+    gap: 10px;
+    color: #ffffff;
+    align-items: center;
+    font-size: 36px;
+}
+.container-right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.container-right a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1em;
+}
+
+/* top players styles */
+.top-players {
+    margin-bottom: 30px;
+}
+.section-title{
+    font-size: 24px;
+    color: #562eff;
+    margin-top: 3px;
+}
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+}
+.player {
+    display: flex;
+    align-items: center;
+}
+.player-name{
+    margin-left: 16px;
+    font-size: 18px;
+}
+.player img{
+    width: 56px;
+    height: 56px;
+}
+hr{
+    border: 1px solid #D1D1D1;
+    margin-bottom: 27px;
+}
+
+/* top blogs styles */
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 26px;
+    grid-row-gap: 26px;
+}
+.blog {
+    display: flex;
+    gap: 10px;
+}
+.blog-title{
+    margin: 10px 0;
+}
+
+.blog .thumbnail img{
+    width: 177px;
+    height: 117px;
+}
+.blog-author{
+    font-size: 16px;
+    color: #9F9F9F;
+}
+.blog-author a{
+    text-decoration: none;
+    color: #562eff;
+}
+/* latest courses styles */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.course img{
+    width: 230px;
+    height: 120px;
+}
+
+/*---------------
+ Responsive Styles
+ ----------------- */
+
+@media only screen and (max-width:688px) {
+    .container {
+        width: 100%;
+    }
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player, .blog{
+        flex-direction: column;
+    }
+    
+}
